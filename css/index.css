@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@700&display=swap');
+
+header {
+    background-image: url("../Assets/bg_header.png");
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-image: url("../Assets/bg_footer.png");
+    text-align: center;
+}
+
+#titre_header {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: rgb(173, 173, 173);
+    text-shadow:
+    0 0 8px rgb(255, 255, 255);
+    padding-bottom: 1px;
+}
+
+#titre_header2 {
+    padding-top : 20px;
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    color: #3b90f1;
+    text-transform: uppercase;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+}
+  
+#titre_header2:before{
+    content: attr(data-text);
+    position: absolute;
+    background: rgb(216, 214, 214);
+    -webkit-background-clip: text;
+    color: transparent;
+    clip-path: ellipse(20px 20px at -2.54% -9.25%);
+    animation: swing 5s infinite;
+    animation-direction: alternate;
+}
+  
+  @keyframes swing{
+    0%{
+       -webkit-clip-path: ellipse(20px 20px at -2.54% -9.25%)
+      clip-path: ellipse(20px 20px at -2.54% -9.25%)
+    }
+    50%{
+      -webkit-clip-path: ellipse(120px 120px at 49.66% 64.36%);
+      clip-path: ellipse(120px 120px at 49.66% 64.36%);
+  
+    }
+    100%{
+       -webkit-clip-path: ellipse(20px 20px at 102.62% -1.61%;);
+      clip-path: ellipse(20px 20px at 102.62% -1.61%);
+    }
+}
+
+.p_accueil {
+
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  padding-top: 50px;
+  margin-bottom: -30px;
+  color: #666666;
+  text-align: center;
+  border : 8px silver double;
+  
+}
+
+#bouton_accueil{
+
+  font-family : 'Dosis';
+  font-size: 28px;
+  color: white;
+  box-shadow: 0 0 6px black;
+  background-color: #22A0C3;
+  border: 2px dotted rgb(80, 80, 80);
+  border-radius: 50px;
+  margin-bottom: 60px;
+
+}
+
+#bouton_accueil:hover{
+
+  transform: scale(1.15);
+  cursor: pointer;
+  font-family : 'Dosis';
+  font-size: 28px;
+  color: rgb(255, 245, 245);
+  box-shadow: 0 0 10px rgb(5, 5, 5);
+  background-color: black;
+  border: 3px solid rgb(168, 168, 168);
+  border-radius: 50px;
+
+}
+
+#titre_footer {
+
+  color: white;
+  font-family : 'Bebas Neue';
+  font-size: 30px;
+  padding-top: 50px;
+  text-shadow: 0 0 10px white;
+
+}
+
+.logos_footer{
+
+  padding-top: 50px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.logos_footer > a:hover{
+
+  cursor:pointer;
+
+}
+

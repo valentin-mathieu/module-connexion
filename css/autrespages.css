@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@700&display=swap');
+
+/* HEADER / FOOTER */
+
+header {
+    background-image: url("../Assets/bg_header.png");
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+    background-image: url("../Assets/bg_footer.png");
+    text-align: center;
+}
+
+#titre_header {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: rgb(173, 173, 173);
+    text-shadow:
+    0 0 8px rgb(255, 255, 255);
+    padding-bottom: 1px;
+}
+
+#titre_header2 {
+    padding-top : 20px;
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    color: #3b90f1;
+    text-transform: uppercase;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+}
+  
+#titre_header2:before{
+    content: attr(data-text);
+    position: absolute;
+    background: rgb(216, 214, 214);
+    -webkit-background-clip: text;
+    color: transparent;
+    clip-path: ellipse(20px 20px at -2.54% -9.25%);
+    animation: swing 5s infinite;
+    animation-direction: alternate;
+}
+  
+@keyframes swing{
+    0%{
+       -webkit-clip-path: ellipse(20px 20px at -2.54% -9.25%)
+      clip-path: ellipse(20px 20px at -2.54% -9.25%)
+    }
+    50%{
+      -webkit-clip-path: ellipse(120px 120px at 49.66% 64.36%);
+      clip-path: ellipse(120px 120px at 49.66% 64.36%);
+  
+    }
+    100%{
+       -webkit-clip-path: ellipse(20px 20px at 102.62% -1.61%;);
+      clip-path: ellipse(20px 20px at 102.62% -1.61%);
+    }
+}
+
+#titre_footer {
+
+    color: white;
+    font-family : 'Bebas Neue';
+    font-size: 30px;
+    padding-top: 50px;
+    text-shadow: 0 0 10px white;
+  
+}
+  
+.logos_footer{
+    padding-top: 50px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+.logos_footer > a:hover{
+  cursor:pointer;
+}
+
+/* INSCRIPTION / CONNEXION */
+
+.form {
+    margin: auto;
+    width: 625px;
+    padding: 0;
+    border: 6px double #2d719e;
+    border-radius: 1em;
+    color: rgb(77, 176, 241);
+    background-color: white;
+    font-family: 'Dosis';
+    font-size: 25px;
+    text-align: left;
+
+}
+  
+input{
+    color: rgb(128, 126, 127);
+    font-family: 'Dosis';
+    font-size: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border: 1px solid rgb(94, 94, 94);
+    display: inline-block;
+}
+  
+.bouton {
+    padding-left: 260px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.bouton_co {
+    padding-left: 240px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+    
+.bouton_form {
+    background-color: rgb(61, 60, 60);
+    color: rgb(224, 222, 222);
+    border: 3px solid #03080c;
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+  
+#titre_form {
+    color: rgb(101, 186, 243);
+    text-align: center;
+    font-family: 'Bebas Neue';
+    text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 12px rgba(155, 220, 240, 0.705),
+      0 0 21px rgba(92, 199, 241, 0.92),
+      0 0 54px rgba(50, 95, 243, 0.92);
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.messages {
+
+    color: black;
+    text-align: center;
+    font-family: 'Dosis';
+    font-size: 30px;
+    
+}
+
+.erreurs {
+
+    color: black;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Dosis';
+
+}
+
+/* PROFIL */
+
+#titre_profil {
+
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.bouton_profil {
+
+    font-family : 'Dosis';
+    font-size: 22px;
+    color: white;
+    box-shadow: 0 0 6px black;
+    background-color: #22A0C3;
+    border: 2px dotted rgb(80, 80, 80);
+    border-radius: 50px;
+    margin-left: 39.5%;
+  
+}
+  
+.bouton_profil:hover{
+  
+    /* transform: scale(1.15); */
+    cursor: pointer;
+    font-family : 'Dosis';
+    font-size: 22px;
+    color: rgb(255, 245, 245);
+    box-shadow: 0 0 10px rgb(5, 5, 5);
+    background-color: black;
+    border: 3px solid rgb(168, 168, 168);
+    border-radius: 50px;
+  
+}
+
+.bouton_profil_form {
+    padding-left: 185px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.bouton_mdp_form {
+    padding-left: 145px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+/* ADMIN */
+
+#tableau_admin {
+
+    justify-content: center;
+    align-items: center;
+    
+}
